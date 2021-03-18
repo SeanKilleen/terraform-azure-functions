@@ -1,3 +1,11 @@
+terraform {
+  backend "azurerm" {
+    resource_group_name  = "demo-infrastructure"
+    storage_account_name = "demoinfrastructure"
+    container_name       = "tstate"
+    key                  = "terraform.tfstate"
+  }
+}
 provider "azurerm" {
   features {}
 }
