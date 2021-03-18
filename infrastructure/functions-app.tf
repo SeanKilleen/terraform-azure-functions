@@ -47,6 +47,6 @@ resource "azurerm_function_app" "example" {
     repo_url           = "https://github.com/SeanKilleen/terraform-azure-functions"
     branch             = "main"
     manual_integration = false
-    rollback_enabled   = true
+    rollback_enabled   = false
   }
 }
